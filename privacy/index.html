@@ -11,7 +11,7 @@
   <div class="wrap">
     <header><img src="../assets/swyli-icon.png" alt=""><a href="../">Swyli</a></header>
     <h1>Privacy Policy</h1>
-    <p class="meta">Last updated: November 3, 2026 · Publisher: Nachman Cohen · Contact: <a href="mailto:swyli.support@gmail.com">swyli.support@gmail.com</a></p>
+    <p class="meta">Last updated: November 3, 2026 (Email Cleaner) · Publisher: Nachman Cohen · Contact: <a href="mailto:swyli.support@gmail.com">swyli.support@gmail.com</a></p>
 
     <div class="card summary">
       <strong>Summary.</strong> Swyli works entirely on your iPhone. Your photos and videos never leave your device, and we do not collect, store, sell or share any personal data.
@@ -23,6 +23,7 @@
       <li>Swyli reads photos and videos to show them to you, to sort them, and to find possibly similar photos. The similarity check runs on your device using Apple's Vision framework.</li>
       <li>Swyli does not download originals from iCloud to analyse them. Items stored only in iCloud may appear without a preview.</li>
       <li><strong>Your contacts</strong>, only if you open the Contacts tools and allow access. Swyli reads them on your iPhone to find duplicates and incomplete contacts. It changes or deletes contacts only after you confirm.</li>
+      <li><strong>Your Gmail account</strong>, only if you choose Sign in with Google in Email Cleaner. Swyli then reads message details (sender, subject, date, labels, a short preview, and unsubscribe headers) and, when you open an email, its text, so it can count, list and clean emails in the categories you pick. It moves emails to Gmail Trash or unsubscribes only when you ask. Everything is processed on your iPhone and sent only between your iPhone and Google. Swyli has no server and never stores your emails.</li>
       <li><strong>Storage figures</strong> that iOS reports: free and total device space, and the size of media files already on your iPhone. They are shown to you and are not sent anywhere.</li>
     </ul>
 
@@ -32,9 +33,14 @@
       <li>A local index of photo details (identifiers, dates, types and sizes) so the app opens faster. It contains no images and is excluded from device backups.</li>
       <li>How many deletions you made today, for the free daily limit.</li>
       <li>Whether you finished the introduction screens.</li>
+      <li>If you sign in with Google: a sign-in token in the iPhone Keychain (this device only) so you stay signed in, and the senders you chose to keep. Signing out revokes access at Google and removes the token.</li>
       <li>Backups of contacts you chose to delete or merge (vCard files), so you can restore them. You can share or remove them from the Backups screen.</li>
     </ul>
     <p>These files stay inside the app's private storage on your iPhone and are deleted when you delete the app. They are never sent to a server.</p>
+
+    <h2>Google user data</h2>
+    <p>Swyli's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. Gmail data is used only to provide the email cleaning features you request, is not used for advertising, is not sold, and is not transferred to anyone. No person reads your emails. You can remove Swyli's access at any time from your Google Account (Security → Third-party apps with account access) or by signing out in Swyli.</p>
+    <p>When you unsubscribe from a mailing list, Swyli uses the sender's own unsubscribe method: it contacts the sender's unsubscribe address, sends an unsubscribe email from your account, or opens the sender's page.</p>
 
     <h2>Deleting photos</h2>
     <p>Swyli never deletes anything without your confirmation. Every deletion goes through Apple's Photos confirmation dialog. Deleted items move to the <strong>Recently Deleted</strong> album in Photos, where iOS keeps them for up to 30 days.</p>
@@ -47,7 +53,7 @@
       <li>No account or sign-in</li>
       <li>No analytics, advertising or tracking</li>
       <li>No crash-reporting service</li>
-      <li>No servers — Swyli makes no network requests of its own</li>
+      <li>No servers — Swyli's only network requests go to Apple, to Google when you use Email Cleaner, and to a sender's unsubscribe address when you unsubscribe</li>
       <li>No sale or sharing of data with third parties</li>
     </ul>
 
@@ -66,11 +72,12 @@
       <ul>
         <li><strong>גישה לתמונות:</strong> רק באישורך, מלאה או לתמונות נבחרות, וניתנת לשינוי בכל עת בהגדרות iOS. זיהוי תמונות דומות מתבצע על המכשיר.</li>
         <li><strong>אנשי קשר:</strong> רק אם פתחת את כלי אנשי הקשר ואישרת גישה. הקריאה נעשית על המכשיר, ושינוי או מחיקה רק לאחר אישורך. לפני כל מחיקה או מיזוג נשמר גיבוי vCard במכשיר.</li>
+        <li><strong>Gmail:</strong> רק אם התחברת עם Google במנקה המיילים. פרטי ההודעות נקראים ומעובדים על המכשיר, ונשלחים רק בין האייפון ל-Google. העברה לאשפה או ביטול מנוי נעשים רק לפי בקשתך. השימוש בנתוני Google תואם את Google API Services User Data Policy, כולל דרישות Limited Use. אין שרת של Swyli ואיננו שומרים את המיילים שלך.</li>
         <li><strong>iCloud:</strong> האפליקציה לא מורידה מקור מ-iCloud לצורך ניתוח.</li>
         <li><strong>נשמר במכשיר בלבד:</strong> רשימת התמונות המוגנות (מזהים בלבד), אינדקס פרטי ספרייה ללא תמונות שאינו נכלל בגיבוי, מונה המחיקות היומי, וסימון סיום מסכי הפתיחה. מחיקת האפליקציה מוחקת אותם.</li>
         <li><strong>מחיקה:</strong> רק לאחר אישורך בחלון של Photos. הפריטים עוברים ל"נמחקו לאחרונה" ונשמרים עד 30 יום.</li>
         <li><strong>רכישות:</strong> מעובדות על ידי Apple. איננו רואים פרטי תשלום או Apple ID.</li>
-        <li><strong>אין:</strong> חשבון משתמש, אנליטיקס, פרסומות, מעקב, שרתים או שיתוף עם צד שלישי.</li>
+        <li><strong>אין:</strong> חשבון משתמש, אנליטיקס, פרסומות, מעקב, שרתים של Swyli או שיתוף עם צד שלישי.</li>
       </ul>
       <p>יצירת קשר: <a href="mailto:swyli.support@gmail.com">swyli.support@gmail.com</a></p>
     </div>
