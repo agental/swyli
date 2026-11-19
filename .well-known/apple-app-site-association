@@ -1,0 +1,10 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["697W9UC8G3.app.swyli.ios"],
+        "components": [{ "/": "/get*", "comment": "Shared photos' link: opens Swyli when installed" }]
+      }
+    ]
+  }
+}

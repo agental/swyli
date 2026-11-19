@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Get Swyli</title>
+  <meta name="description" content="Swyli — swipe to clean your iPhone photos. Nothing is deleted until you confirm.">
+  <link rel="canonical" href="https://swyliapp.com/get/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Swyli">
+  <meta property="og:title" content="Swyli — swipe to clean your photos">
+  <meta property="og:description" content="Sort photos and videos with a swipe. Nothing is deleted until you confirm, and your photos stay on your phone.">
+  <meta property="og:url" content="https://swyliapp.com/get/">
+  <meta property="og:image" content="https://swyliapp.com/assets/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="apple-touch-icon" href="../assets/swyli-icon.png">
+  <link rel="stylesheet" href="../style.css">
+  <script>
+    // Flip each to true once that store's listing is live; until then the page itself shows.
+    var STORES = {
+      ios: { live: false, url: "https://apps.apple.com/app/id6829770040" },
+      android: { live: false, url: "https://play.google.com/store/apps/details?id=app.swyli.android" }
+    };
+    (function () {
+      var ua = navigator.userAgent || "";
+      var isIOS = /iPhone|iPad|iPod/.test(ua) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+      var store = isIOS ? STORES.ios : (/Android/.test(ua) ? STORES.android : null);
+      if (store && store.live) location.replace(store.url);
+    })();
+  </script>
+</head>
+<body>
+  <div class="wrap">
+    <header><img src="../assets/swyli-icon.png" alt=""><a href="../">Swyli</a></header>
+    <h1>Swipe to clean your photos.</h1>
+    <p class="meta">Keep what you love, clear the rest. Nothing is deleted until you confirm, and your photos stay on your phone.</p>
+    <p class="meta">Swyli is coming soon to the App Store and Google Play.</p>
+    <div class="links">
+      <a class="button" href="../">About Swyli</a>
+    </div>
+    <footer>© 2026 Nachman Cohen · Swyli</footer>
+  </div>
+</body>
+</html>
